@@ -17,21 +17,21 @@ f-vueuse 是一个轻量级的 Vue 3 composables 集合，旨在帮助开发者�
 
 目前 f-vueuse 提供以下 composables：
 
-- [x] useRefHistory：管理值的历史记录，支持撤销/重做
-- [x] useToggle：布尔值切换状态管理
-- [x] useThrottleFn：函数节流工具
-- [x] useDebounceFn：函数防抖工具
-- [x] useLoading：管理加载状态
-- [x] useMouse：追踪鼠标位置
-- [x] useStorage：通用存储封装
-- [x] useLocalStorage：localStorage 封装
-- [ ] useEventListener：事件监听器封装
-- [ ] useIntersectionObserver：交叉观察器
-- [ ] useScroll：滚动位置监听
-- [ ] useMediaQuery：媒体查询响应式
-- [ ] useRafFn：requestAnimationFrame 封装
-- [ ] useIntervalFn：定时器函数封装
-- [ ] useAsyncState：异步状态管理
-- [ ] useFetch：HTTP 请求封装
-- [ ] useElementSize：元素尺寸监听
-- [ ] useResizeObserver：元素尺寸变化监听
+- [x] **useRefHistory**：管理值的历史记录，支持撤销/重做
+- [x] **useToggle**：布尔值切换状态管理
+- [x] **useThrottleFn**：函数节流工具
+- [x] **useDebounceFn**：函数防抖工具
+- [x] **useLoading**：管理加载状态
+- [x] **useMouse**：追踪鼠标位置
+- [x] **useStorage**：通用存储封装
+- [x] **useLocalStorage**：localStorage 封装
+- [ ] **useEventListener**：事件监听器封装
+- [ ] **useIntersectionObserver**：交叉观察器
+- [ ] **useScroll**：滚动位置监听
+- [ ] **useMediaQuery**：媒体查询响应式
+- [ ] **useRafFn**：requestAnimationFrame 封装
+- [ ] **useIntervalFn**：定时器函数封装
+- [ ] **useAsyncState**：异步状态管理
+- [ ] **useFetch**：HTTP 请求封装
+- [ ] **useElementSize**：元素尺寸监听
+- [ ] **useResizeObserver**：元素尺寸变化监听

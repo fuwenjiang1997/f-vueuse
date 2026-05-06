@@ -2,7 +2,7 @@ import taskLists from 'markdown-it-task-lists'
 import { defineConfig } from 'vitepress'
 
 import { locales } from './i18n'
-import { generateMultiLangSidebar } from './utils'
+import { sidebar } from './sidebar'
 
 export default defineConfig({
   base: '/f-vueuse/',
@@ -10,8 +10,8 @@ export default defineConfig({
     config(md) {
       md.use(taskLists, {
         disabled: false,
-        label: true,
-        labelAfter: true
+        label: true
+        // labelAfter: true
       })
     }
   },
@@ -25,7 +25,7 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: '指南', link: '/guide/' }
     ],
-    sidebar: generateMultiLangSidebar().root,
+    sidebar,
     editLink: {
       pattern: 'https://github.com/fuwenjiang1997/f-vueuse/apps/docs-website/docs/:path',
       text: '在 GitHub 上编辑此页'

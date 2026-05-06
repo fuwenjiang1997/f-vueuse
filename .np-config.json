@@ -1,5 +1,6 @@
 {
   "branch": "main",
+  "pnpm": true,
   "yarn": false,
   "cleanup": true,
   "publish": true,
@@ -7,5 +8,5 @@
   "releaseDraft": false,
   "tag": "latest",
   "access": "public",
-  "test": false
+  "tests": false
 }

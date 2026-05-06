@@ -7,5 +7,6 @@
 [1msrc/index.ts[22m → [1mdist/index.js[22m...[39m
 [1m[33m(!) Unresolved dependencies[39m[22m
 [90mhttps://rollupjs.org/troubleshooting/#warning-treating-module-as-external-dependency[39m
-[1mvue-demi[22m (imported by "src/useLoading/index.ts" and "src/useMouse/index.ts")
-[32mcreated [1mdist/index.js[22m in [1m992ms[22m[39m
+[1mvue-demi[22m (imported by "src/useLoading/index.ts", "src/useMouse/index.ts", "src/useToggle/index.ts" and "src/useRefHistory/index.ts")
+[1mlodash-es[22m (imported by "src/useRefHistory/index.ts")
+[32mcreated [1mdist/index.js[22m in [1m1.3s[22m[39m

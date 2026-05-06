@@ -1,14 +1,13 @@
-import { Ref, ShallowRef } from 'vue-demi'
+import { ComputedRef, Ref } from 'vue-demi'
 
 export interface UseRefHistoryParams<T> {
-  refValue: Ref<T>
+  deep?: boolean
 }
 
 export interface UseRefHistoryResult<T> {
-  history: Readonly<ShallowRef<T[]>>
-  current: Readonly<Ref<T>>
-  canUndo: Readonly<Ref<boolean>>
-  canRedo: Readonly<Ref<boolean>>
+  history: ComputedRef<T[]>
+  canUndo: ComputedRef<boolean>
+  canRedo: ComputedRef<boolean>
   undo: () => void
   redo: () => void
   clear: () => void

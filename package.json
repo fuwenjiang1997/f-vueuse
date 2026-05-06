@@ -23,20 +23,23 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "eslint": "10.3.0",
-    "@eslint/js": "10.0.1",
-    "globals": "17.6.0",
-    "eslint-plugin-vue": "10.9.1",
-    "vue-eslint-parser": "10.4.0",
-    "eslint-plugin-simple-import-sort": "13.0.0",
-    "@typescript-eslint/parser": "8.59.2",
-    "cspell": "10.0.0",
     "@commitlint/cli": "20.5.3",
     "@commitlint/config-conventional": "20.5.3",
-    "husky": "9.1.7",
-    "cz-git": "1.13.0",
+    "@eslint/js": "10.0.1",
+    "@typescript-eslint/parser": "8.59.2",
     "commitizen": "4.3.1",
+    "cspell": "10.0.0",
+    "cz-git": "1.13.0",
+    "eslint": "10.3.0",
+    "eslint-plugin-simple-import-sort": "13.0.0",
+    "eslint-plugin-vue": "10.9.1",
+    "globals": "17.6.0",
+    "husky": "9.1.7",
+    "np": "11.2.0",
     "turbo": "2.9.9",
-    "np": "11.2.0"
+    "vue-eslint-parser": "10.4.0"
+  },
+  "dependencies": {
+    "lodash-es": "^4.18.1"
   }
 }

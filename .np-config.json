@@ -1,0 +1,10 @@
+{
+  "branch": "main",
+  "yarn": false,
+  "cleanup": true,
+  "publish": true,
+  "push": true,
+  "releaseDraft": false,
+  "tag": "latest",
+  "access": "public"
+}

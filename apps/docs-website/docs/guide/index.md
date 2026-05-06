@@ -33,3 +33,5 @@ f-vueuse 是一个轻量级的 Vue 3 composables 集合，旨在帮助开发者�
 - [ ] useIntervalFn：定时器函数封装
 - [ ] useAsyncState：异步状态管理
 - [ ] useFetch：HTTP 请求封装
+- [ ] useElementSize：元素尺寸监听
+- [ ] useResizeObserver：元素尺寸变化监听

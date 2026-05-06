@@ -1,5 +1,5 @@
 node_modules
-**/.vitepress
+**/.vitepress/cache
 **/dist
 .editorconfig
 .dependencygraph

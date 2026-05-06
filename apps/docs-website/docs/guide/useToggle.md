@@ -1,7 +1,4 @@
 # useToggle
----
-title: useToggle
----
 
 `useToggle` 是一个用于管理布尔值切换状态的 Vue 组合式 API 函数。它提供了一组便捷的方法来控制布尔值的切换。
 

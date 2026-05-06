@@ -1,8 +1,3 @@
----
-title: useLoading
-editLink: true
----
-
 # useLoading
 
 管理异步操作的加载状态。

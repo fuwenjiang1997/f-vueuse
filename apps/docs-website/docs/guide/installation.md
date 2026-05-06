@@ -1,8 +1,3 @@
----
-title: 安装
-editLink: true
----
-
 # 安装
 
 在你的 Vue 项目中安装 f-vueuse。

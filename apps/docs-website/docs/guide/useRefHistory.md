@@ -1,7 +1,4 @@
 # useRefHistory
----
-title: useRefHistory
----
 
 `useRefHistory` 是一个用于管理值的历史记录的 Vue 组合式 API（Composition API）函数。它通过保存历史记录，使得你能够执行回退（撤销）和前进（重做）等操作。
 

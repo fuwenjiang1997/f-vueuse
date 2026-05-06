@@ -1,8 +1,3 @@
----
-title: useMouse
-editLink: true
----
-
 # useMouse
 
 追踪鼠标位置。

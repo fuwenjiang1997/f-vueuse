@@ -11,4 +11,5 @@ export interface UseRefHistoryResult<T> {
   undo: () => void
   redo: () => void
   clear: () => void
+  currentIndex: Ref<number>
 }

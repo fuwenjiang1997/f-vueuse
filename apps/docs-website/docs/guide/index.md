@@ -1,48 +1,24 @@
 ---
-title: 使用指南
+title: 简介
 editLink: true
 ---
 
-# 使用指南
+欢迎使用 **f-vueuse**，这是一个为 Vue 3 项目打造的实用 composables 库。
 
-欢迎阅读 f-vueuse 指南。本文档将帮助你在 Vue 项目中开始使用 f-vueuse composables。
+## 什么是 f-vueuse？
 
-## 安装
+f-vueuse 是一个轻量级的 Vue 3 composables 集合，旨在帮助开发者快速构建高效的 Vue 应用。它提供了一系列常用的组合式函数，涵盖状态管理、DOM 操作、事件处理等多个领域。
 
-首先，通过 npm 或 yarn 安装 f-vueuse：
+## 核心特性
 
-```bash
-npm install f-vueuse
-# 或
-yarn add f-vueuse
-```
+- **TypeScript 原生支持**：所有 composables 都用 TypeScript 编写，提供完整的类型定义
+- **轻量级**：无冗余依赖，专注于核心功能
+- **响应式优先**：充分利用 Vue 3 的响应式系统
+- **开箱即用**：简单的 API 设计，快速上手
 
-## 基本用法
+## 可用 Composables
 
-导入你需要的 composables：
+目前 f-vueuse 提供以下 composables：
 
-```vue
-<script setup>
-import { useLoading, useMouse } from 'f-vueuse'
-
-const [handler, isLoading] = useLoading((done) => {
-  setTimeout(() => {
-    console.log('完成!')
-    done()
-  }, 1000)
-})
-
-const { x, y } = useMouse()
-</script>
-```
-
-## 可用的 Composables
-
-| Composable | 描述                   |
-| ---------- | ---------------------- |
-| useLoading | 管理异步操作的加载状态 |
-| useMouse   | 追踪鼠标位置           |
-
-## 贡献
-
-我们欢迎贡献！请查看我们的 [贡献指南](./contributing) 获取更多详情。
+- [x] **useLoading**：管理加载状态的工具函数
+- [x] **useMouse**：追踪鼠标位置的响应式钩子

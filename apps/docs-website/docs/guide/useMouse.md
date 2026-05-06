@@ -9,7 +9,7 @@ editLink: true
 
 ## 用法
 
-```twoslash
+```vue
 <script setup>
 import { useMouse } from 'f-vueuse'
 

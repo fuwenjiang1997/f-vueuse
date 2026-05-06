@@ -5,6 +5,7 @@ import { locales } from './i18n'
 import { generateMultiLangSidebar } from './utils'
 
 export default defineConfig({
+  base: '/f-vueuse/',
   markdown: {
     config(md) {
       md.use(taskLists, {

@@ -8,5 +8,6 @@
   "releaseDraft": false,
   "tag": "latest",
   "access": "public",
-  "tests": false
+  "tests": false,
+  "yolo": true
 }

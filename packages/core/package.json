@@ -12,7 +12,7 @@
   "scripts": {
     "dev": "rollup -c -w",
     "build": "rollup -c",
-    "publish:ui": "np --no-publish --branch=main && npm publish"
+    "publish:ui": "np"
   },
   "keywords": [],
   "author": "Fuwenjiang",

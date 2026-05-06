@@ -1,0 +1,40 @@
+name: Deploy Docs to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'apps/docs-website/**'
+      - 'packages/core/**'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build core package
+        run: pnpm --filter @f-vueuse/core build
+
+      - name: Build docs
+        run: pnpm --filter docs-website build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./apps/docs-website/.vitepress/dist
+          publish_branch: gh-pages

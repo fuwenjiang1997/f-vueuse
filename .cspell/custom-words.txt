@@ -1,5 +1,6 @@
 demi
 dependencygraph
 fuwenjiang
+peaceiris
 vitepress
 vueuse

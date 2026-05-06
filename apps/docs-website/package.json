@@ -1,0 +1,20 @@
+{
+  "name": "docs-website",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "keywords": [],
+  "author": "Fuwenjiang",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@f-vueuse/core": "workspace:*"
+  },
+  "devDependencies": {
+    "vitepress": "1.6.4"
+  }
+}

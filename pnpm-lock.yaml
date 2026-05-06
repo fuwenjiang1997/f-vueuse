@@ -60,7 +60,7 @@ importers:
 
   apps/docs-website:
     dependencies:
-      '@fj/vueuse-core':
+      'fj-vueuse-core':
         specifier: workspace:*
         version: link:../../packages/core
     devDependencies:
@@ -73,7 +73,7 @@ importers:
 
   apps/web:
     dependencies:
-      '@fj/vueuse-core':
+      'fj-vueuse-core':
         specifier: workspace:*
         version: link:../../packages/core
       lodash-es:

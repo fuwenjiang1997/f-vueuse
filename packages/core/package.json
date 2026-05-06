@@ -1,5 +1,5 @@
 {
-  "name": "@fj/vueuse-core",
+  "name": "fj-vueuse-core",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",

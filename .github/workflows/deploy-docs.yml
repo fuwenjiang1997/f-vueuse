@@ -47,7 +47,7 @@ jobs:
         run: pnpm install
 
       - name: Build core package
-        run: pnpm --filter @fj/vueuse-core build
+        run: pnpm --filter fj-vueuse-core build
 
       - name: Build docs
         run: pnpm --filter docs-website build

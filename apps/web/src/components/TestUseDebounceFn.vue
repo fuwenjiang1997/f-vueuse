@@ -8,7 +8,7 @@
     </Layout>
 </template>
 <script setup lang="ts">
-import { useDebounceFn } from '@fj/vueuse-core'
+import { useDebounceFn } from 'fj-vueuse-core'
 import { ref } from 'vue'
 
 import Layout from './Layout.vue'

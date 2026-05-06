@@ -10,7 +10,7 @@
     </Layout>
 </template>
 <script setup lang="ts">
-import { useRefHistory } from '@fj/vueuse-core'
+import { useRefHistory } from 'fj-vueuse-core'
 import { ref } from 'vue'
 
 import Layout from './Layout.vue'

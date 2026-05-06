@@ -7,7 +7,7 @@
     </Layout>
 </template>
 <script setup lang="ts">
-import { useThrottleFn } from '@fj/vueuse-core'
+import { useThrottleFn } from 'fj-vueuse-core'
 import { ref } from 'vue'
 
 import Layout from './Layout.vue'

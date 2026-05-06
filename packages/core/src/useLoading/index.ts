@@ -20,19 +20,3 @@ export function useLoading<T extends any[] = any[]>(fn: UseLoadingFn<T>): UseLoa
 
   return [handler, isLoading]
 }
-
-/**
- * 示例
- */
-const [handler1, isLoading1] = useLoading(done => {
-  setTimeout(() => {
-    // console.log('你好')
-    done()
-  }, 1000)
-})
-
-const [handler2, isLoading2] = useLoading(async (done, params1: string) => {
-  await handler1()
-  done()
-})
-handler2('章三')

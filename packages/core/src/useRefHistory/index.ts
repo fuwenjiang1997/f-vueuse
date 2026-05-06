@@ -1,5 +1,5 @@
 import { cloneDeep } from 'lodash-es'
-import { computed, isReactive, isRef, Reactive, Ref, ref, shallowRef, watch } from 'vue-demi'
+import { computed, isReactive, isRef, Reactive, readonly, Ref, ref, shallowRef, watch } from 'vue-demi'
 
 import { UseRefHistoryParams, UseRefHistoryResult } from './types'
 
@@ -10,7 +10,8 @@ import { UseRefHistoryParams, UseRefHistoryResult } from './types'
 export const useRefHistory = <T>(value: Ref<T> | Reactive<T>, params: UseRefHistoryParams<T> = {}): UseRefHistoryResult<T> => {
   const isReactiveValue = isReactive(value)
   const refValue = isRef(value) ? value : ref(value as T)
-  const _history = shallowRef<T[]>([cloneDeep(refValue.value)])
+  const initialValue = cloneDeep(refValue.value)
+  const _history = shallowRef<T[]>([initialValue])
   const currentIndex = ref(0)
   let changeFlag = false
 
@@ -59,7 +60,8 @@ export const useRefHistory = <T>(value: Ref<T> | Reactive<T>, params: UseRefHist
   }
   const clear = () => {
     _history.value.length = 0
-    currentIndex.value = -1
+    _history.value.push(refValue.value)
+    currentIndex.value = 0
   }
 
   return {
@@ -69,6 +71,6 @@ export const useRefHistory = <T>(value: Ref<T> | Reactive<T>, params: UseRefHist
     undo,
     redo,
     clear,
-    currentIndex
+    currentIndex: readonly(currentIndex)
   }
 }

@@ -13,7 +13,7 @@
     </div>
 </template>
 <script setup lang="ts">
-import { useDebounceFn } from '@fuwenjiang/vueuse-core'
+import { useDebounceFn } from '@fj/vueuse-core'
 import { ref } from 'vue'
 
 const inputValue = ref('')
@@ -61,7 +61,7 @@ const debouncedSearch = useDebounceFn((value: string) => {
     />
 </template>
 <script setup lang="ts">
-import { useDebounceFn } from '@fuwenjiang/vueuse-core'
+import { useDebounceFn } from '@fj/vueuse-core'
 import { ref } from 'vue'
 
 const query = ref('')

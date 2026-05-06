@@ -12,7 +12,7 @@
   "license": "ISC",
   "type": "module",
   "dependencies": {
-    "@f-vueuse/core": "workspace:*"
+    "@fj/vueuse-core": "workspace:*"
   },
   "devDependencies": {
     "markdown-it-task-lists": "^2.1.1",

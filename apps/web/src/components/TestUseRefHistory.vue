@@ -10,11 +10,11 @@
     </Layout>
 </template>
 <script setup lang="ts">
-import { useRefHistory } from '@f-vueuse/core'
+import { useRefHistory } from '@fj/vueuse-core'
 import { ref } from 'vue'
 
 import Layout from './Layout.vue'
 
-const content = ref('')
+const content = ref('999')
 const { history, canUndo, canRedo, undo, redo, clear } = useRefHistory(content)
 </script>

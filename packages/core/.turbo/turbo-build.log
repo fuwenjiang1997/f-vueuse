@@ -1,6 +1,6 @@
 
 
-> @fuwenjiang/vueuse-core@1.1.0 build /Users/fuwenjiang/Desktop/code/learn/f-vueuse/packages/core
+> @fj/vueuse-core@1.1.0 build /Users/fuwenjiang/Desktop/code/learn/f-vueuse/packages/core
 > rollup -c
 
 [36m

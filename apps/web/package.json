@@ -11,7 +11,7 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "@f-vueuse/core": "workspace:*",
+    "@fj/vueuse-core": "workspace:*",
     "lodash-es": "^4.18.1",
     "vue": "3.5.34"
   },

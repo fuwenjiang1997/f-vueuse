@@ -17,7 +17,7 @@
 </template>
 <script setup lang="ts">
 import { ref, watchEffect } from 'vue'
-import { useRefHistory } from '@fuwenjiang/vueuse-core'
+import { useRefHistory } from '@fj/vueuse-core'
 
 const count = ref(0)
 
@@ -74,7 +74,7 @@ watchEffect(() => {
 </template>
 <script setup lang="ts">
 import { ref } from 'vue'
-import { useRefHistory } from '@fuwenjiang/vueuse-core'
+import { useRefHistory } from '@fj/vueuse-core'
 
 const content = ref('')
 const { history, canUndo, canRedo, undo, redo, clear } = useRefHistory(content)
@@ -94,7 +94,7 @@ const { history, canUndo, canRedo, undo, redo, clear } = useRefHistory(content)
 </template>
 <script setup lang="ts">
 import { reactive, ref } from 'vue'
-import { useRefHistory } from '@fuwenjiang/vueuse-core'
+import { useRefHistory } from '@fj/vueuse-core'
 
 const form = reactive({
     name: '',

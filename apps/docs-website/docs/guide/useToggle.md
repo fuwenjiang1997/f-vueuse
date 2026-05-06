@@ -16,7 +16,7 @@
     </div>
 </template>
 <script setup lang="ts">
-import { useToggle } from '@f-vueuse/core'
+import { useToggle } from '@fuwenjiang/vueuse-core'
 
 const [isActive, isActiveApi] = useToggle({ defaultValue: false })
 </script>
@@ -59,7 +59,7 @@ const [isActive, isActiveApi] = useToggle({ defaultValue: false })
     </div>
 </template>
 <script setup lang="ts">
-import { useToggle } from '@f-vueuse/core'
+import { useToggle } from '@fuwenjiang/vueuse-core'
 
 const [isOn, { toggle }] = useToggle({ defaultValue: true })
 </script>

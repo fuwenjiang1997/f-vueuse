@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "turbo dev",
     "build": "turbo build",
-    "publish:ui": "pnpm --filter @f-vueuse/core publish:ui",
+    "publish:ui": "pnpm --filter @fuwenjiang/vueuse-core publish:ui",
     "lint": "eslint --fix",
     "spellcheck": "cspell lint --dot --gitignore --cache --show-suggestions  \"(packages|apps)/**/*.@(html|js|cjs|mjs|ts|tsx|css|scss|md)\"",
     "commit": "git-cz",

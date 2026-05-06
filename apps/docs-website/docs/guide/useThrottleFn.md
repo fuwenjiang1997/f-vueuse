@@ -12,7 +12,7 @@
     </div>
 </template>
 <script setup lang="ts">
-import { useThrottleFn } from '@f-vueuse/core'
+import { useThrottleFn } from '@fuwenjiang/vueuse-core'
 import { ref } from 'vue'
 
 const count = ref(0)
@@ -56,7 +56,7 @@ const throttledClick = useThrottleFn(() => {
     </div>
 </template>
 <script setup lang="ts">
-import { useThrottleFn } from '@f-vueuse/core'
+import { useThrottleFn } from '@fuwenjiang/vueuse-core'
 
 const throttledGreet = useThrottleFn((name: string) => {
     console.log(`Hello, ${name}!`)

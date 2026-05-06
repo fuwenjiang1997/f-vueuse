@@ -38,10 +38,10 @@ const { x, y } = useMouse()
 
 ## 可用的 Composables
 
-| Composable | 描述 |
-|------------|------|
+| Composable | 描述                   |
+| ---------- | ---------------------- |
 | useLoading | 管理异步操作的加载状态 |
-| useMouse | 追踪鼠标位置 |
+| useMouse   | 追踪鼠标位置           |
 
 ## 贡献
 

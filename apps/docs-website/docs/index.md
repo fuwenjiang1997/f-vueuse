@@ -1,24 +1,37 @@
 ---
-title: 欢迎使用 f-vueuse
-editLink: true
+layout: home
+
+hero:
+  name: f-vueuse
+  tagline: 轻量、实用的 Vue 3 Composable 工具库，让你的开发更高效
+  image:
+    src: /logo.svg
+    alt: f-vueuse
+  actions:
+    - theme: brand
+      text: 快速开始 →
+      link: /guide
+    - theme: alt
+      text: GitHub
+      link: https://github.com/fuwenjiang1997/f-vueuse
+
+features:
+  - icon: ⚡
+    title: 轻量无依赖
+    details: 极小的打包体积，仅包含你使用的功能，支持 Tree Shaking，按需引入零负担
+  - icon: 🎯
+    title: TypeScript 优先
+    details: 完整的类型推导和类型定义，开箱即用的类型安全体验，无需额外配置
+  - icon: 🔌
+    title: 简洁易用
+    details: 直观简洁的 API 设计，基于 Vue 3 Composition API，随时可用、随时扩展
+  - icon: 🌲
+    title: 功能丰富
+    details: 涵盖状态管理、DOM 操作、网络请求等多种场景，持续更新常用工具函数
+  - icon: 🧩
+    title: 灵活组合
+    details: 每个 Composable 都独立可用，支持自由组合，轻松应对复杂业务场景
+  - icon: 📦
+    title: 开箱即用
+    details: 无需额外配置，直接导入使用，文档详尽示例丰富，上手即用
 ---
-
-# f-vueuse
-
-一个用于构建强大应用的 Vue composables 集合。
-
-## 特性
-
-- 🎯 **类型安全**: 完整的 TypeScript 支持
-- ⚡ **轻量级**: 最小化的包体积
-- 📦 **支持 Tree Shaking**: 只导入你需要的功能
-- 🌐 **国际化**: 内置 i18n 支持
-
-## 开始使用
-
-查看我们的 [指南](./guide) 开始使用 f-vueuse。
-
-## Composables
-
-- [useLoading](./useLoading) - 加载状态管理
-- [useMouse](./useMouse) - 鼠标位置追踪

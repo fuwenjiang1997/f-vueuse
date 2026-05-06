@@ -9,7 +9,7 @@ editLink: true
 
 ## 用法
 
-```vue
+```twoslash
 <script setup>
 import { useMouse } from 'f-vueuse'
 
@@ -25,10 +25,10 @@ const { x, y } = useMouse()
 
 ## 返回值
 
-| 参数 | 类型 | 描述 |
-|------|------|------|
-| x | `Ref<number>` | 鼠标 X 坐标 |
-| y | `Ref<number>` | 鼠标 Y 坐标 |
+| 参数 | 类型          | 描述        |
+| ---- | ------------- | ----------- |
+| x    | `Ref<number>` | 鼠标 X 坐标 |
+| y    | `Ref<number>` | 鼠标 Y 坐标 |
 
 ## 类型定义
 

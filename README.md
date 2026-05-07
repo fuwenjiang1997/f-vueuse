@@ -43,16 +43,14 @@ const throttledFn = useThrottleFn(() => {
 
 ## 📚 可用 Composables
 
-| Composable        | 描述                            | 状态 |
-| ----------------- | ------------------------------- | ---- |
-| `useRefHistory`   | 管理值的历史记录，支持撤销/重做 | ✅    |
-| `useToggle`       | 布尔值切换状态管理              | ✅    |
-| `useThrottleFn`   | 函数节流工具                    | ✅    |
-| `useDebounceFn`   | 函数防抖工具                    | ✅    |
-| `useLoading`      | 加载状态管理                    | ✅    |
-| `useMouse`        | 鼠标位置追踪                    | ✅    |
-| `useStorage`      | 通用存储封装                    | ✅    |
-| `useLocalStorage` | localStorage 封装               | ✅    |
+| Composable      | 描述                            | 状态 |
+| --------------- | ------------------------------- | ---- |
+| `useRefHistory` | 管理值的历史记录，支持撤销/重做 | ✅    |
+| `useToggle`     | 布尔值切换状态管理              | ✅    |
+| `useThrottleFn` | 函数节流工具                    | ✅    |
+| `useDebounceFn` | 函数防抖工具                    | ✅    |
+| `useLoading`    | 加载状态管理                    | ✅    |
+| `useMouse`      | 鼠标位置追踪                    | ✅    |
 
 ## 🔮 即将推出
 

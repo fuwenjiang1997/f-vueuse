@@ -47,9 +47,6 @@ jobs:
       - name: Build core package
         run: pnpm --filter fj-vueuse-core build
 
-      - name: Build docs
-        run: pnpm --filter docs-website build
-
       - name: Install np
         run: npm install -g np
 

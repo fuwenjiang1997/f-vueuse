@@ -1,24 +1,68 @@
 # useToggle
 
-`useToggle` 是一个用于管理布尔值切换状态的 Vue 组合式 API 函数。它提供了一组便捷的方法来控制布尔值的切换。
+`useToggle` 是一个用于管理状态切换状态的 Vue 组合式 API 函数。它提供了一组便捷的方法来控制状态的切换。
 
 ## 基本用法
+
+<script setup lang="ts">
+import { useToggle } from 'fj-vueuse-core'
+
+const [isActive, isActiveApi] = useToggle('on', 'off', (newState) => {
+    alert(`触发了回调，切换状态为 ${newState}`)
+})
+const [isActive2, isActive2Api] = useToggle('on', 'off')
+</script>
+
+<div>
+    <div style="display: flex; gap: 10px;">
+        <strong>带回调的状态切换：{{ isActive === 'on' ? '打开' : '关闭' }}</strong>
+        <div style="display: flex; gap: 10px;">
+            <button @click="isActiveApi.toggle">切换</button>
+            <button @click="isActiveApi.reset">重置</button>
+            <button @click="isActiveApi.toggleWith('on')">设为打开</button>
+            <button @click="isActiveApi.toggleWith('off')">设为关闭</button>
+        </div>
+    </div>
+    <div style="display: flex; gap: 10px;">
+        <strong>不带回调的状态切换：{{ isActive2 === 'on' ? '打开' : '关闭' }}</strong>
+        <div style="display: flex; gap: 10px;">
+            <button @click="isActive2Api.toggle">切换</button>
+            <button @click="isActive2Api.reset">重置</button>
+            <button @click="isActive2Api.toggleWith('on')">设为打开</button>
+            <button @click="isActive2Api.toggleWith('off')">设为关闭</button>
+        </div>
+    </div>
+</div>
+
 
 ```vue
 <template>
     <div>
-        <h1>状态：{{ isActive ? '激活' : '未激活' }}</h1>
-        <button @click="isActiveApi.toggle">切换</button>
-        <button @click="isActiveApi.on">开启</button>
-        <button @click="isActiveApi.off">关闭</button>
-        <button @click="isActiveApi.reset">重置</button>
-        <button @click="isActiveApi.toggleWith(true)">设为开启</button>
+        <div style="display: flex; gap: 10px;">
+            <p>带回调的状态：{{ isActive === 'on' ? '打开' : '关闭' }}</p>
+            <div style="display: flex; gap: 10px;">
+                <button @click="isActiveApi.toggle">切换</button>
+                <button @click="isActiveApi.reset">重置</button>
+                <button @click="isActiveApi.toggleWith('on')">设为打开</button>
+            </div>
+        </div>
+        <div style="display: flex; gap: 10px;">
+            <p>不带回调的状态：{{ isActive2 === 'on' ? '打开' : '关闭' }}</p>
+            <div style="display: flex; gap: 10px;">
+                <button @click="isActive2Api.toggle">切换</button>
+                <button @click="isActive2Api.reset">重置</button>
+                <button @click="isActive2Api.toggleWith('on')">设为打开</button>    
+            </div>
+        </div>
     </div>
 </template>
 <script setup lang="ts">
 import { useToggle } from 'fj-vueuse-core'
 
-const [isActive, isActiveApi] = useToggle({ defaultValue: false })
+const [isActive, isActiveApi] = useToggle('on', 'off', (newState) => {
+    alert(`触发了回调，切换状态为 ${newState}`)
+})
+const [isActive2, isActive2Api] = useToggle('on', 'off')
 </script>
 ```
 

@@ -1,0 +1,1 @@
+import{G as a,p as g}from"./framework.0BthBoik.js";const f=(t,n,s)=>{const e=a(t);return[e,{toggle:()=>{e.value=e.value===t?n:t,s==null||s(e.value)},reset:()=>{e.value=t},toggleWith:o=>{o!==t&&o!==n||(e.value=o,s==null||s(o))}}]};function l(t){const n=g(!1);return[(...e)=>new Promise(r=>{n.value===!0&&r(void 0),n.value=!0,t(i=>{n.value=!1,r(i)},...e)}),n]}export{l as a,f as u};

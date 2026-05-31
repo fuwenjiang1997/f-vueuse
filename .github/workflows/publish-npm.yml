@@ -47,10 +47,13 @@ jobs:
       - name: Build core package
         run: pnpm --filter fj-vueuse-core build
 
+      - name: Run test
+        run: pnpm --filter fj-vueuse-core test
+
       - name: Install np
         run: npm install -g np
 
       - name: Publish UI package 🚀
-        run: np ${{ github.event.inputs.version }} --provenance --any-branch
+        run: pnpm publish:ui
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

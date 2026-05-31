@@ -10,7 +10,8 @@
     "lint": "eslint --fix",
     "spellcheck": "cspell lint --dot --gitignore --cache --show-suggestions  \"(packages|apps)/**/*.@(html|js|cjs|mjs|ts|tsx|css|scss|md)\"",
     "commit": "git-cz",
-    "prepare": "husky"
+    "prepare": "husky install",
+    "test": "turbo test"
   },
   "config": {
     "commitizen": {
@@ -29,13 +30,13 @@
     "commitizen": "4.3.1",
     "cspell": "10.0.0",
     "cz-git": "1.13.0",
-    "eslint": "10.3.0",
+    "eslint": "10.4.1",
     "eslint-plugin-simple-import-sort": "13.0.0",
     "eslint-plugin-vue": "10.9.1",
     "globals": "17.6.0",
     "husky": "9.1.7",
     "np": "11.2.0",
-    "turbo": "2.9.9",
+    "turbo": "2.9.16",
     "vue-eslint-parser": "10.4.0"
   },
   "dependencies": {

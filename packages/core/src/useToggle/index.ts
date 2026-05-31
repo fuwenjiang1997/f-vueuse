@@ -1,36 +1,31 @@
-import { ref } from 'vue-demi'
+import { shallowRef } from 'vue'
 
-import { UseToggleParams, UseToggleResult } from './types'
+import { UseToggleResult } from './types'
 
-export const useToggle = (params: UseToggleParams): UseToggleResult => {
-  const data = ref(params.defaultValue || false)
+export const useToggle = <T, R>(defaultValue: T, toggleValue: R, cb?: (newValue: T | R) => void): UseToggleResult<T, R> => {
+  const data = shallowRef<T | R>(defaultValue)
 
   const toggle = () => {
-    data.value = !data.value
+    data.value = data.value === defaultValue ? toggleValue : defaultValue
+    cb?.(data.value)
   }
 
-  const toggleWith = (value: boolean) => {
+  const toggleWith = (value: T | R) => {
+    if (value !== defaultValue && value !== toggleValue) {
+      return
+    }
     data.value = value
-  }
-
-  const on = () => {
-    data.value = true
-  }
-
-  const off = () => {
-    data.value = false
+    cb?.(value)
   }
 
   const reset = () => {
-    data.value = params.defaultValue || false
+    data.value = defaultValue
   }
 
   return [
     data,
     {
       toggle,
-      on,
-      off,
       reset,
       toggleWith
     }

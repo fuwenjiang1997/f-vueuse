@@ -1,15 +1,9 @@
-import type { Ref } from 'vue-demi'
+import type { Ref } from 'vue'
 
-export interface UseToggleParams {
-  defaultValue?: boolean
-}
-
-export interface UseToggleResultApi {
+export interface UseToggleResultApi<T, R> {
   toggle: () => void
-  on: () => void
-  off: () => void
   reset: () => void
-  toggleWith: (value: boolean) => void
+  toggleWith: (value: T | R) => void
 }
 
-export type UseToggleResult = [Ref<boolean>, UseToggleResultApi]
+export type UseToggleResult<T, R> = [Ref<T | R>, UseToggleResultApi<T, R>]

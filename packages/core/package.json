@@ -13,7 +13,8 @@
   "scripts": {
     "dev": "rollup -c -w",
     "build": "rollup -c",
-    "publish:ui": "np"
+    "publish:ui": "np",
+    "test": "vitest"
   },
   "keywords": [],
   "author": "Fuwenjiang",
@@ -26,6 +27,12 @@
   "devDependencies": {
     "@rollup/plugin-typescript": "12.3.0",
     "@types/lodash-es": "^4.17.12",
-    "rollup": "4.60.3"
+    "@vue/test-utils": "^2.4.10",
+    "jsdom": "^29.1.1",
+    "rollup": "4.60.3",
+    "vitest": "^4.1.7"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.35"
   }
 }

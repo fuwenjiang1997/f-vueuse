@@ -2,18 +2,18 @@
 layout: home
 
 hero:
-  name: f-vueuse
+  name: fj-vueuse-core
   tagline: 轻量、实用的 Vue 3 Composable 工具库，让你的开发更高效
   image:
     src: /logo.svg
-    alt: f-vueuse
+    alt: fj-vueuse-core
   actions:
     - theme: brand
       text: 快速开始 →
       link: /guide
     - theme: alt
       text: GitHub
-      link: https://github.com/fuwenjiang1997/f-vueuse
+      link: https://github.com/fuwenjiang1997/fj-vueuse-core
 
 features:
   - icon: ⚡

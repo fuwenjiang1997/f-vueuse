@@ -13,19 +13,19 @@
 
 ```bash
 # 使用 pnpm
-pnpm add fj-vueuse-core
+pnpm add f-vueuse
 
 # 使用 npm
-npm install fj-vueuse-core
+npm install f-vueuse
 
 # 使用 yarn
-yarn add fj-vueuse-core
+yarn add f-vueuse
 ```
 
 ## 🚀 快速开始
 
 ```typescript
-import { useRefHistory, useToggle, useThrottleFn } from 'fj-vueuse-core'
+import { useRefHistory, useToggle, useThrottleFn } from 'f-vueuse'
 import { ref } from 'vue'
 
 // 历史记录管理

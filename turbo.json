@@ -9,6 +9,10 @@
       "cache": false,
       "persistent": true
     },
+    "build:watch": {
+      "dependsOn": ["^build:watch"],
+      "outputs": ["dist"]
+    },
     "test": {
       "dependsOn": ["^test"]
     },

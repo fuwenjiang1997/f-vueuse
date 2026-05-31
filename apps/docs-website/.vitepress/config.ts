@@ -1,3 +1,4 @@
+import tailwindcss from '@tailwindcss/vite'
 import taskLists from 'markdown-it-task-lists'
 import { defineConfig } from 'vitepress'
 
@@ -20,6 +21,7 @@ export default defineConfig({
   srcDir: 'docs',
   head: [['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }]],
   themeConfig: {
+    theme: './theme/index.ts',
     logo: '/logo.svg',
     nav: [
       { text: '首页', link: '/' },
@@ -31,5 +33,8 @@ export default defineConfig({
       text: '在 GitHub 上编辑此页'
     }
   },
-  locales
+  locales,
+  vite: {
+    plugins: [tailwindcss()]
+  }
 })

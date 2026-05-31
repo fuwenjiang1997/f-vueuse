@@ -17,11 +17,11 @@
 
 ```bash
 # 使用 pnpm
-pnpm add fj-vueuse-core
+pnpm add f-vueuse
 
 # 使用 npm
-npm install fj-vueuse-core
+npm install f-vueuse
 
 # 使用 yarn
-yarn add fj-vueuse-core
+yarn add f-vueuse
 ```

@@ -1,6 +1,6 @@
 export * from './useDebounceFn'
-export * from './useWidthLoading'
 export * from './useMouse'
 export * from './useRefHistory'
 export * from './useThrottleFn'
 export * from './useToggle'
+export * from './useWithLoading'

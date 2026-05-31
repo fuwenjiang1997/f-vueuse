@@ -21,7 +21,7 @@ f-vueuse 是一个轻量级的 Vue 3 composables 集合，旨在帮助开发者�
 - [x] **useToggle**：布尔值切换状态管理
 - [x] **useThrottleFn**：函数节流工具
 - [x] **useDebounceFn**：函数防抖工具
-- [x] **useLoading**：管理加载状态
+- [x] **useWithLoading**：管理加载状态
 - [x] **useMouse**：追踪鼠标位置
 - [x] **useStorage**：通用存储封装
 - [x] **useLocalStorage**：localStorage 封装

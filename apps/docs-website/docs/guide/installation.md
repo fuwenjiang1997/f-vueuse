@@ -1,6 +1,6 @@
 # 安装
 
-在你的 Vue 项目中安装 f-vueuse。
+在你的 Vue 项目中安装 fj-vueuse-core。
 
 ## 前置要求
 
@@ -12,27 +12,27 @@
 ### npm
 
 ```bash
-npm install f-vueuse
+npm install fj-vueuse-core
 ```
 
 ### yarn
 
 ```bash
-yarn add f-vueuse
+yarn add fj-vueuse-core
 ```
 
 ### pnpm
 
 ```bash
-pnpm add f-vueuse
+pnpm add fj-vueuse-core
 ```
 
 ## CDN
 
-你也可以通过 CDN 使用 f-vueuse：
+你也可以通过 CDN 使用 fj-vueuse-core：
 
 ```html
-<script src="https://unpkg.com/f-vueuse"></script>
+<script src="https://unpkg.com/fj-vueuse-core"></script>
 ```
 
 ## 设置
@@ -41,7 +41,7 @@ pnpm add f-vueuse
 
 ```vue
 <script setup>
-import { useLoading, useMouse } from 'f-vueuse'
+import { useLoading, useMouse } from 'fj-vueuse-core'
 
 // 使用 composables
 </script>
@@ -49,4 +49,4 @@ import { useLoading, useMouse } from 'f-vueuse'
 
 ## TypeScript
 
-f-vueuse 用 TypeScript 编写，提供完整的类型支持。无需额外设置。
+fj-vueuse-core 用 TypeScript 编写，提供完整的类型支持。无需额外设置。

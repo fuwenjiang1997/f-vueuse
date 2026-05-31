@@ -6,7 +6,7 @@
 
 ```vue
 <script setup>
-import { useMouse } from 'f-vueuse'
+import { useMouse } from 'fj-vueuse-core'
 
 const { x, y } = useMouse()
 </script>

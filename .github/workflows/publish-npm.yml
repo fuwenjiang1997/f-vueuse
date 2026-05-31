@@ -5,14 +5,12 @@ on:
     branches:
       - main
     paths:
-      - 'apps/docs-website/**'
       - 'packages/core/**'
   pull_request:
     branches:
       - main
     types: [closed]
     paths:
-      - 'apps/docs-website/**'
       - 'packages/core/**'
   workflow_dispatch:
 

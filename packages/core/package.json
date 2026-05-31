@@ -13,7 +13,7 @@
   "scripts": {
     "build": "rollup -c",
     "build:watch": "rollup -c -w",
-    "publish:ui": "np",
+    "publish:ui": "np --yes patch --no-cleanup",
     "test": "vitest"
   },
   "keywords": [],
